@@ -6,12 +6,24 @@
       "tags": ["Banking"]
     },
     {
+      "title": "Energy APIs",
+      "tags": ["Energy"]
+    },
+    {
       "title": "Common APIs",
       "tags": ["Common"]
     },
     {
       "title": "Admin APIs",
       "tags": ["Admin"]
+    },
+    {
+      "title": "Client Registration APIs",
+      "tags": ["Client Registration"]
+    },
+    {
+      "title": "Register APIs",
+      "tags": ["Register"]
     }
   ]
 }

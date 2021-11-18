@@ -2,8 +2,8 @@
 
 | **Reference**  | **Description**  | **Version** |
 | --- | --- | --- |
-| <a id="FAPI-R"></a>**[FAPI-R]**    | Financial-grade API - Part 1: Read Only API Security Profile: <https://openid.net/specs/openid-financial-api-part-1.html>                                                     |Draft-06
-| <a id="FAPI-RW"></a>**[FAPI-RW]**  | Financial-grade API - Part 2: Read and Write API Security Profile: <https://openid.net/specs/openid-financial-api-part-2.html>                                                |Draft-06
+| <a id="FAPI-R"></a>**[FAPI-R]**    | Financial-grade API - Part 1: Read Only API Security Profile: <https://openid.net/specs/openid-financial-api-part-1-ID2.html>                                                     |Draft-06
+| <a id="FAPI-RW"></a>**[FAPI-RW]**  | Financial-grade API - Part 2: Read and Write API Security Profile: <https://openid.net/specs/openid-financial-api-part-2-ID2.html>                                                |Draft-06
 | <a id="JSON"></a>**[JSON]**        | The JavaScript Object Notation (JSON) Data Interchange Format: <https://tools.ietf.org/html/rfc8259>                                                                          |Dec 2017
 | <a id="JWA"></a>**[JWA]**          | JSON Web Algorithms (JWA): <https://tools.ietf.org/html/rfc7518>                                                                                                              |May 2015
 | <a id="JWK"></a>**[JWK]**          | JSON Web Key (JWK): <https://tools.ietf.org/html/rfc7517>                                                                                                                     |May 2015
@@ -21,6 +21,7 @@
 | <a id="RFC7662"></a>**[RFC7662]**  | OAuth 2.0 Token Introspection: <https://tools.ietf.org/html/rfc7662>                                                                                                          |Oct 2015
 | <a id="RFC6750"></a>**[RFC6750]**  | The OAuth 2.0 Authorization Framework: Bearer Token Usage: <https://tools.ietf.org/html/rfc6750>                                                                              |Oct 2012
 | <a id="PAR"></a>**[PAR]**          | OAuth 2.0 Pushed Authorization Requests: <https://tools.ietf.org/html/draft-ietf-oauth-par-01>                                                                                |Feb 2020
+| <a id="DCR"></a>**[DCR]**          | OAuth 2.0 Dynamic Client Registration Protocol: <https://datatracker.ietf.org/doc/html/rfc7591>                                                                                |Jul 2015
 
 
 ## Informative References

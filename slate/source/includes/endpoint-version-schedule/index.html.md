@@ -52,11 +52,12 @@ The following versioning schedule is reflective of the endpoints hosted by Data 
 | Common APIs     | Get Outages                                  | /discovery/outages                                         | GET    | V1      | 2020-07-01          | N/A             | 2019-09-30, V1.0.0 | N/A                |
 | Admin APIs      | Metadata Update                              | /admin/register/metadata                                   | POST   | V1      | 2020-07-01          | N/A             | 2019-09-30, V1.0.0 | N/A                |
 | Admin APIs      | Get Metrics                                  | /admin/metrics                                             | GET    | V1      | 2020-07-01          | 2021-10-31      | 2019-09-30, V1.0.0 | 2021-04-29, V1.9.0 |
-| Admin APIs      | Get Metrics                                  | /admin/metrics                                             | GET    | V2      | 2021-07-31          | N/A             | 2020-09-16, V1.5.0 | N/A                |
+| Admin APIs      | Get Metrics                                  | /admin/metrics                                             | GET    | V2      | 2021-07-31          | 2022-12-05             | 2020-09-16, V1.5.0 | 2021-10-06, V1.12.0                |
+| Admin APIs      | Get Metrics                                  | /admin/metrics                                             | GET    | V3      | 2022-10-01          | N/A             | 2021-10-06, V1.12.0 | N/A                |
 | InfoSec Profile | Endpoints                                    | CDR Arrangement Revocation Endpoint                        | POST   | 1.5.0   | 2020-11-01          | N/A             | 2020-04-17, V1.2.0 | N/A                |
 
 ## Data Recipients
-The following versioning schedule is reflective of the endpoints hosted by Data Recipients.
+The following versioning schedule is reflective of the endpoints hosted by Data Recipient Software Products.
 Data Recipients should take into account their commencement date within the CDR, relevant obligations in accordance with the CDR Rules, as well as any exemptions granted when factoring in which API versions are considered applicable.
 
 | Section         | Sub-section                                  | Endpoint                                                   | Method | Version | Binding Date        | Retirement Date | Date Introduced    | Date Deprecated    |

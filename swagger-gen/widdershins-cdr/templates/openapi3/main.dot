@@ -6,8 +6,6 @@
 {{ for (var r in data.resources) { }}
 {{ data.resource = data.resources[r]; }}
 
-<h1 id="{{=data.title_prefix+'-'+data.utils.slugify(r)}}">{{= r}}</h1>
-
 {{? data.resource.description }}{{= data.resource.description}}{{?}}
 
 {{? data.resource.externalDocs}}
@@ -25,15 +23,16 @@
 {{ } /* of resources */ }}
 
 {{? data.api.components && data.api.components.schemas }}
-# Schemas
+<h2 class="schema-heading" id="{{=data.title_prefix+'-schemas'}}">Schemas</h2>
+<a class="schema-link" id="{{=data.title_prefix+'-schemas'}}"></a>
 
 {{ for (var s in data.components.schemas) { }}
 {{ var origSchema = data.components.schemas[s]; }}
 {{ var schema = data.api.components.schemas[s]; }}
 
-<h2 id="tocS{{=s.toLowerCase()}}">{{=s}}</h2>
+<h2 class="schema-toc" id="tocS{{=s.toLowerCase()}}">{{=s}}</h2>
 
-<a id="schema{{=s.toLowerCase()}}"></a>
+<a id="schema{{=data.title_prefix}}{{=s.toLowerCase()}}"></a>
 
 {{? data.options.yaml }}
 ```yaml
@@ -67,9 +66,9 @@
 ### Properties
 {{?}}
 
-{{? block.rows.length}}|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|{{?}}
-{{~ block.rows :p}}|{{=p.displayName}}|{{? p.cdrType}}{{=p.cdrType}}{{??}}{{=p.safeType}}{{?}}|{{=p.required_text}}|{{=p.restrictions||'none'}}|{{=p.description||'none'}}|
+{{? block.rows.length}}|Name|Type|Required|Description|
+|---|---|---|---|{{?}}
+{{~ block.rows :p}}|{{=p.displayName}}|{{? p.cdrType}}{{=p.cdrType}}{{??}}{{=p.safeType}}{{?}}|{{=p.required_text}}|{{=p.description||'none'}}|
 {{~}}
 {{~}}
 {{? (blocks[0].rows.length === 0) && (blocks.length === 1) }}
